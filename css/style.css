@@ -344,3 +344,8 @@ figcaption{font-size:12px;color:var(--muted);margin-top:8px;letter-spacing:.04em
 /* LINE公式のボタン：LINEの色でひと目でわかるように */
 .btn.line{background:#06c755;color:#fff;border:0}
 .btn.line:hover{background:#05b04b}
+
+/* 野口整体ページの挿絵 */
+.chapter-illust{margin:0 0 18px}
+.chapter-illust svg{display:block;width:112px;height:112px}
+@media (max-width:640px){.chapter-illust svg{width:92px;height:92px}}
