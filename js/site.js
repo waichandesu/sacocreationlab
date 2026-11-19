@@ -18,13 +18,13 @@
   btn.addEventListener('click', function () {
     var open = nav.classList.toggle('open');
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    btn.textContent = open ? '閉じる' : 'メニュー';
+    btn.setAttribute('aria-label', open ? 'ページ一覧を閉じる' : 'ページ一覧を開く');
   });
   nav.addEventListener('click', function (e) {
     if (e.target.tagName === 'A') {
       nav.classList.remove('open');
       btn.setAttribute('aria-expanded', 'false');
-      btn.textContent = 'メニュー';
+      btn.setAttribute('aria-label', 'ページ一覧を開く');
     }
   });
 })();

@@ -353,3 +353,13 @@ figcaption{font-size:12px;color:var(--muted);margin-top:8px;letter-spacing:.04em
 .mini-illust svg{display:block;width:72px;height:72px}
 .entry .mini-illust{margin-bottom:18px}
 .entry .num{font-size:28px;margin-bottom:12px}
+
+/* スマホ用：三本線のボタン（開くと×） */
+.menu-btn{width:46px;height:46px;padding:0;border-radius:50%;position:relative}
+.menu-btn span{position:absolute;left:13px;right:13px;height:1.5px;background:var(--ink);border-radius:2px;transition:transform .2s,opacity .2s}
+.menu-btn span:nth-child(1){top:16px}
+.menu-btn span:nth-child(2){top:22px}
+.menu-btn span:nth-child(3){top:28px}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
