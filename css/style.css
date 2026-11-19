@@ -349,3 +349,7 @@ figcaption{font-size:12px;color:var(--muted);margin-top:8px;letter-spacing:.04em
 .chapter-illust{margin:0 0 18px}
 .chapter-illust svg{display:block;width:112px;height:112px}
 @media (max-width:640px){.chapter-illust svg{width:92px;height:92px}}
+.mini-illust{margin:0 0 14px}
+.mini-illust svg{display:block;width:72px;height:72px}
+.entry .mini-illust{margin-bottom:18px}
+.entry .num{font-size:28px;margin-bottom:12px}
