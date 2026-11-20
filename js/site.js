@@ -28,3 +28,28 @@
     }
   });
 })();
+
+// メールアドレスをコピー
+(function () {
+  var btns = document.querySelectorAll('.copy-mail');
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var mail = btn.getAttribute('data-mail');
+      var done = function () {
+        var old = btn.textContent;
+        btn.textContent = 'コピーしました';
+        setTimeout(function () { btn.textContent = old; }, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(mail).then(done, function () { fallback(mail); done(); });
+      } else { fallback(mail); done(); }
+    });
+  });
+  function fallback(text) {
+    var t = document.createElement('textarea');
+    t.value = text; t.setAttribute('readonly', ''); t.style.position = 'absolute'; t.style.left = '-9999px';
+    document.body.appendChild(t); t.select();
+    try { document.execCommand('copy'); } catch (e) {}
+    document.body.removeChild(t);
+  }
+})();
