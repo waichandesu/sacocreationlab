@@ -7,7 +7,7 @@ var EVENT_SCHEDULE = {
   publico: {
     rule: { week: 1, weekday: 6 }, // 第1土曜日（0=日, 6=土）
     changes: {
-      // '2027-01': '2027-01-10',
+      '2027-01': '2027-01-09',
     }
   },
   nakano: {
