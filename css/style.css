@@ -400,3 +400,4 @@ figcaption{font-size:12px;color:var(--muted);margin-top:8px;letter-spacing:.04em
 .hero-name-line strong{margin-left:1em}
 @media (max-width:640px){.hero-name-line .role{display:block;margin-bottom:4px}.hero-name-line strong{margin-left:0}}
 .next-date{margin:0 0 6px;font-size:13.5px;font-weight:600;color:var(--accent)}
+.bk-narrow{display:none}@media (max-width:960px){.bk-wide{display:none}.bk-narrow{display:block;margin:8px 0 0}}
